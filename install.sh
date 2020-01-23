@@ -75,4 +75,4 @@ sudo update-rc.d apache2 disable
 # to start/stop apache whenever needed
 sudo /etc/init.d/apache2 start
 # install php
-sudo apt install php libapache2-mod-php
+sudo apt install php libapache2-mod-php php-mysql
