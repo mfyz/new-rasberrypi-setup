@@ -62,6 +62,10 @@ sudo mysql
 > CREATE USER 'admin'@'%' IDENTIFIED BY '1234';
 > GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%';
 > FLUSH PRIVILEGES;
+# accept remote client connections to mysql/mariadb server
+sudo vim /etc/mysql/mariadb.conf.d/50-server.cnf
+# change bind-address to 0.0.0.0 and restart mysql
+sudo service mysql restart
 
 
 # install apache (docroot is /var/www)
