@@ -4,6 +4,7 @@ sudo apt install tmux
 
 # set up zsh and plugins
 sudo apt install zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -46,7 +47,7 @@ nvm install --lts
 # ruby
 sudo apt install ruby-full
 sudo gem install jekyll
-gem install colorls
+sudo gem install colorls
 
 # install mariadb/mysql
 sudo apt install mariadb-server
