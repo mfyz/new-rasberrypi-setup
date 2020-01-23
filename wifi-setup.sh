@@ -8,5 +8,11 @@ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 # }
 # save and exit, then;
 
-# to test the configuration
+# to apply the new configuration
 wpa_cli -i wlan0 reconfigure
+
+# test if you received new ip address:
+ifconfig wlan0
+
+# and ping a domain to verify the internet connectivity
+ping mfyz.com
