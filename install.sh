@@ -46,6 +46,7 @@ nvm install --lts
 
 # ruby
 sudo apt install ruby-full
+sudo gem install bundle
 sudo gem install jekyll
 sudo gem install colorls
 
